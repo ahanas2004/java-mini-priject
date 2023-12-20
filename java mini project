@@ -1,0 +1,32 @@
+CURRENCY CONVERTER FROM USD TO INR 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Currency Converter");
+        System.out.print("Enter the amount in USD: ");
+        double usdAmount = scanner.nextDouble();
+
+        // Fixed conversion rate for demonstration purposes
+        double conversionRate = 74.5; // 1 USD to INR as of my knowledge cutoff
+
+        double convertedAmount = convertCurrency(usdAmount, conversionRate);
+
+        System.out.println("Converted amount in INR: " + convertedAmount);
+
+        // Close the scanner to prevent resource leak
+        scanner.close();
+    }
+
+    private static double convertCurrency(double amount, double conversionRate) {
+        return amount * conversionRate;
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                         -- USER NAME :- ahanas
+                                                                                                                                         -- REPOSITORY :- JAVA MINI PROJECT
